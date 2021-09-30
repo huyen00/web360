@@ -22,3 +22,26 @@ const viewer = new PANOLENS.Viewer({
 
 viewer.add(panorama);
 
+//xử lý nút click
+$(document).ready(function(){
+    $('.icon').click(function(event){
+        // const id = this.id.split('_')[1];
+        // var checkId = $(this).attr('class').split(' ');
+        // if(checkId.find(e=>e=='active')=='active'){
+        //     $(this).removeClass('active');
+        //     $(`#menu_${id}`).removeClass('menu-hidden');
+            
+        // }
+        // else{
+        //     $(this).addClass('active');
+        //     $(`#menu_${id}`).addClass('menu');
+            
+        // }
+        $('.menu').hide();
+        
+    });
+    $('#menu_1').click(function(event){
+        $('.menu').show();
+    })
+})
+
