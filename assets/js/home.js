@@ -25,12 +25,44 @@ viewer.add(panorama);
 //xử lý nút click menu
 $(document).ready(function(){
     $('.menu').show();
-    // $('.click-menu').hide();
-    $('.icon').click(function(event){
+    $('.show-menu').click(function(event){
         $('.menu').toggle();
-        // $('.click-menu-hidden').hide();
-        // $('.click-menu').show();
-        // $('.click-menu').css("margin-top","10px")
+    });
+});
+
+//xử lý khi click vào arrow-left arrow-right
+$(document).ready(function(){
+    $('.arrow-left').click(function(event){
+        $('.arrow-left').hide();
+        $('.arrow-right').show();
+        // const id= this.id.split('_')[1];
+        // var checkid = $(this).attr('class').split(' ');
+        // if(checkid.find(e=>e=='active')=='active'){
+        //     $(this).removeClass('active');
+        //     $('.arrow-left').hide();
+        //     $('.arrow-right').show();
+        // }
+        // else{
+        //     $(this).addClass('active');
+        //     $('.arrow-right').hide();
+        //     $('.arrow-left').show();
+        // }
+    });
+    $('.arrow-right').click(function(event){
+        $('.arrow-right').hide();
+            $('.arrow-left').show();
+        // const id= this.id.split('_')[1];
+        // var checkid = $(this).attr('class').split(' ');
+        // if(checkid.find(e=>e=='active')=='active'){
+        //     $(this).removeClass('active');
+        //     $('.arrow-left').hide();
+        //     $('.arrow-right').show();
+        // }
+        // else{
+        //     $(this).addClass('active');
+        //     $('.arrow-right').hide();
+        //     $('.arrow-left').show();
+        // }
     });
 });
 
@@ -87,22 +119,15 @@ $('.center').slick({
   });
 
   /* xử lý khi click vào volum */
-  
   $(document).ready(function(){
     $('.fa-volume-up').click(function(event){
-        const id= this.id.split('_')[1];
-        var checkid = $(this).attr('class').split(' ');
-        if(checkid.find(e=>e=='active')=='active'){
-            $(this).removeClass('active');
-            $('.fa-volume-up').hide();
-            $('.fa-volume-mute').show();
-        }
-        else{
-            $(this).addClass('active');
-            $('.fa-volume-up').show();
-        }
-        
-
-       
+        $('.fa-volume-up').hide();
+        $('.fa-volume-mute').show();
+    });
+    $('.fa-volume-mute').click(function(event){
+        $('.fa-volume-up').show();
+        $('.fa-volume-mute').hide();
     });
 });
+
+

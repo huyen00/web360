@@ -19,7 +19,7 @@
             <p>Hình ảnh chỉ mang tính chất minh họa</p>
         </div>
         <div class="row controller ">
-            
+            <!-- carousel ảnh 360 -->
             <div class=" mx-auto controller-brand d-flex">
                 <div class="row" >
                     <div class="owl">
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="icon-controller clearfix   d-flex"> -->
+                <div class="icon-controller d-flex ">
                     <div class=" icon-left float-left">
                         <a href="#"class="icon1">
                             <i class="fas fa-backward icon-prew"></i>
@@ -69,7 +69,7 @@
                     <div class="  icon-center ">
                         <a href="#"class="icon1">
                             <i class="fas fa-volume-up active" id="volum_1"></i> 
-                            <i class="fas fa-volume-mute"></i>
+                            <i class="fas fa-volume-mute" id="volum_2"></i>
                         </a>
                         <a href="#"class="icon1">
                             <i class="fas fa-arrow-alt-circle-left"></i>
@@ -107,17 +107,17 @@
                             <i class="fas fa-forward"></i>
                         </a>
                     </div>                          
-                <!-- </div>            -->
+                </div>           
                
             </div>
             
         </div>
-        
     </div>
+    <!--  form hướng dẫn -->
     <div class="form-huongdan">
         <!-- <div class="background"></div> -->
         <div class="form-brand">
-            <h5 class="title-hd">HƯỚNG DẪN</h5>
+            <h5 class="title-hd mt-3">HƯỚNG DẪN</h5>
             <div class="row content-hd">
                 <div class="col-md-4">
                     <a href="#">
@@ -133,15 +133,18 @@
                 </div>
             </div>
             <div class="icon-close">
-                <i class="fas fa-times"></i>
+                <!-- <i class="fas fa-times"></i> -->
+                <img src="assets/image/anh360/btn_x.png " class="close-x" alt="">
             </div>
         </div>
     </div>
-    <div class="icon">
+    <!-- menu -->
+    <div class="show-menu">
         <a href="#">
-            <i class="fas fa-angle-double-right click-menu"></i>
-            <i class="fas fa-angle-double-left click-menu-hidden"></i>
+            <img src="assets/image/anh360/arrow_left.png" class="img-fluid arrow-left active" id="left_1" alt="">
+            <img src="assets/image/anh360/arrow_right.png" class="img-fluid arrow-right" id="right_2" alt="">
         </a>
+        
     </div>
     <div class="menu">
         <div class="title">
@@ -219,11 +222,9 @@
                     <a href="#" class="menu-link">Phòng ngủ phụ</a>
                 </li>
             </ul>
-        </div>
-        
+        </div> 
     </div>
 
-   
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
