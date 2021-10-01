@@ -23,6 +23,14 @@ a{
 .video span{
     opacity: 0;
 }
+.video span{
+    opacity: 0;
+}
+.video-title{
+    position: absolute;
+    top:90%;
+    left:75%;
+}
 svg{
     opacity: 0 !important;
 }
